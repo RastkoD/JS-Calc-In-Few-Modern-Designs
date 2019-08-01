@@ -1,0 +1,101 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #cccccc;
+  height: 100vh;
+}
+
+.futur {
+  background-color: #ff0000;
+  height: 704px;
+}
+
+.navbar {
+  opacity: 0.5;
+}
+
+.container {
+  margin: auto;
+  width: 330px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5%;
+}
+.entry {
+  width: 265px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 2px;
+  background-color: #d1d1d1;
+  border: none;
+  font-size: 35px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px white;
+}
+.calc-container {
+  width: 300px;
+  background-color: #d1d1d1;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  box-shadow: 6px 6px 5px rgb(212, 212, 212);
+}
+.numBut {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 35px;
+  /*border-radius: 50%;*/
+}
+.mathBut {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 35px;
+  /*border-radius: 50%;*/
+}
+.equalBut {
+  height: 59px;
+  width: 126px;
+  margin: 10px 4px;
+  font-weight: bold;
+  font-size: 25px;
+  /*border-radius: 45%;*/
+}
+.mBut {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 25px;
+  /*border-radius: 50%;*/
+}
+.aBut {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 25px;
+  /*border-radius: 50%;*/
+}
+.neon {
+  color: rgb(253, 253, 253);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
+    0 0 40px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255),
+    0 0 90px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255),
+    0 0 150px rgb(255, 255, 255);
+}
+.numBut:hover,
+.aBut:hover,
+.mBut:hover,
+.equalBut:hover,
+.mathBut:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #d1d1d1;
+}

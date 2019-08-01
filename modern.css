@@ -1,0 +1,93 @@
+.modern {
+  background-color: #ff0000;
+  height: 704px;
+}
+
+.containerM {
+  margin: auto;
+  width: 330px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5%;
+}
+.entryM {
+  width: 265px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 2px;
+  background-color: #d1d1d1;
+  border: none;
+  font-size: 35px;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px white;
+}
+.calc-containerM {
+  width: 300px;
+  background-color: #d1d1d1;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  box-shadow: 6px 6px 5px rgb(190, 190, 190);
+}
+.numButM {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 35px;
+  /*border-radius: 50%;*/
+}
+.mathButM {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 35px;
+  /*border-radius: 50%;*/
+}
+.equalButM {
+  height: 59px;
+  width: 126px;
+  margin: 10px 4px;
+  font-weight: bold;
+  font-size: 25px;
+  /*border-radius: 45%;*/
+}
+.mButM {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 25px;
+  /*border-radius: 50%;*/
+}
+.aButM {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 25px;
+  /*border-radius: 50%;*/
+}
+
+.numButM,
+.aButM,
+.mButM,
+.equalButM,
+.mathButM {
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+}
+
+.numButM:hover,
+.aButM:hover,
+.mButM:hover,
+.equalButM:hover,
+.mathButM:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #d1d1d1;
+}

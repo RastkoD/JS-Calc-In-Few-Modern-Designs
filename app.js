@@ -1,8 +1,8 @@
 const PageState = function() {
-  let currentState = new homeState(this);
+  let currentState = new futurState(this);
 
   this.init = function() {
-    this.change(new homeState());
+    this.change(new futurState());
   };
 
   this.change = function(state) {
@@ -10,12 +10,13 @@ const PageState = function() {
   };
 };
 
-// Home State
-const homeState = function(page) {
+// Futur. State
+const futurState = function(page) {
   document.querySelector('#heading').textContent = null;
   document.querySelector('#content').innerHTML = `
   <section class='futur'>
      <div class="container">
+     <h3>futur.</h3>
       <div class="calc-container">
         <div class="row">
           <form name="calc">
@@ -196,16 +197,17 @@ const homeState = function(page) {
         </div>
       </div>
     </div>
-  <section>
+  </section>
   `;
 };
 
-// About State
-const aboutState = function(page) {
+// Modern State
+const modernState = function(page) {
   document.querySelector('#heading').textContent = null;
   document.querySelector('#content').innerHTML = `
   <section class='modern'>
     <div class="containerM">
+      <h3>modern.</h3>
       <div class="calc-containerM">
         <div class="row">
           <form name="calc">
@@ -415,20 +417,20 @@ const page = new PageState();
 page.init();
 
 // UI Vars
-const home = document.getElementById('home'),
-  about = document.getElementById('about'),
+const futur = document.getElementById('futur'),
+  modern = document.getElementById('modern'),
   contact = document.getElementById('contact');
 
-// Home
-home.addEventListener('click', e => {
-  page.change(new homeState());
+// Futur.
+futur.addEventListener('click', e => {
+  page.change(new futurState());
 
   e.preventDefault();
 });
 
-// About
-about.addEventListener('click', e => {
-  page.change(new aboutState());
+// Modern
+modern.addEventListener('click', e => {
+  page.change(new modernState());
 
   e.preventDefault();
 });

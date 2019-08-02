@@ -1,47 +1,63 @@
 .futur {
-  background: linear-gradient(
-      90deg,
-      rgba(134, 134, 134, 0.05) 0%,
-      rgba(134, 134, 134, 0.05) 21%,
-      rgba(95, 95, 95, 0.05) 21%,
-      rgba(95, 95, 95, 0.05) 100%
+  background: linear-gradient(0deg, #fff 0%, transparent 100%),
+    linear-gradient(0deg, #fff 0%, transparent 100%),
+    linear-gradient(
+      135deg,
+      rgba(96, 96, 96, 0.21) 0%,
+      rgba(96, 96, 96, 0.21) 50%,
+      rgba(45, 45, 45, 0.21) 50%,
+      rgba(45, 45, 45, 0.21) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(220, 220, 220, 0.2) 0%,
+      rgba(220, 220, 220, 0.2) 31%,
+      rgba(200, 200, 200, 0.2) 31%,
+      rgba(200, 200, 200, 0.2) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(124, 124, 124, 0.26) 0%,
+      rgba(124, 124, 124, 0.26) 15%,
+      rgba(218, 218, 218, 0.26) 15%,
+      rgba(218, 218, 218, 0.26) 100%
     ),
     linear-gradient(
       45deg,
-      rgba(16, 16, 16, 0.08) 0%,
-      rgba(16, 16, 16, 0.08) 43%,
-      rgba(254, 254, 254, 0.08) 43%,
-      rgba(254, 254, 254, 0.08) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(35, 35, 35, 0.08) 0%,
-      rgba(35, 35, 35, 0.08) 36%,
-      rgba(198, 198, 198, 0.08) 36%,
-      rgba(198, 198, 198, 0.08) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(75, 75, 75, 0.08) 0%,
-      rgba(75, 75, 75, 0.08) 54%,
-      rgba(123, 123, 123, 0.08) 54%,
-      rgba(123, 123, 123, 0.08) 100%
+      rgba(157, 157, 157, 0.14) 0%,
+      rgba(157, 157, 157, 0.14) 46%,
+      rgba(26, 26, 26, 0.14) 46%,
+      rgba(26, 26, 26, 0.14) 100%
     ),
     linear-gradient(
       45deg,
-      rgba(39, 39, 39, 0.03) 0%,
-      rgba(39, 39, 39, 0.03) 86%,
-      rgba(229, 229, 229, 0.03) 86%,
-      rgba(229, 229, 229, 0.03) 100%
+      rgba(180, 180, 180, 0.1) 0%,
+      rgba(180, 180, 180, 0.1) 45%,
+      rgba(62, 62, 62, 0.1) 45%,
+      rgba(62, 62, 62, 0.1) 100%
     ),
     linear-gradient(
       135deg,
-      rgba(74, 74, 74, 0.1) 0%,
-      rgba(74, 74, 74, 0.1) 61%,
-      rgba(70, 70, 70, 0.1) 61%,
-      rgba(70, 70, 70, 0.1) 100%
+      rgba(33, 33, 33, 0.22) 0%,
+      rgba(33, 33, 33, 0.22) 59%,
+      rgba(164, 164, 164, 0.22) 59%,
+      rgba(164, 164, 164, 0.22) 100%
     ),
-    linear-gradient(90deg, rgb(148, 148, 148), rgb(245, 245, 245));
+    linear-gradient(
+      135deg,
+      rgba(24, 24, 24, 0.11) 0%,
+      rgba(24, 24, 24, 0.11) 71%,
+      rgba(245, 245, 245, 0.11) 71%,
+      rgba(245, 245, 245, 0.11) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(5, 5, 5, 0.15) 0%,
+      rgba(5, 5, 5, 0.15) 91%,
+      rgba(50, 50, 50, 0.15) 91%,
+      rgba(50, 50, 50, 0.15) 100%
+    ),
+    linear-gradient(90deg, rgb(198, 198, 198), rgb(158, 158, 158));
   height: 92.2vh;
 }
 
@@ -81,7 +97,7 @@
   margin-top: 50px;
   margin-bottom: 10px;
   border: 1px solid #ffffff;
-  box-shadow: 6px 6px 5px rgb(158, 158, 158);
+  box-shadow: 6px 6px 5px rgba(255, 255, 255, 0.151);
 }
 .numBut {
   height: 59px;
@@ -138,4 +154,13 @@
 
 .btn {
   background-color: #d1d1d1;
+}
+
+.transition-fade {
+  opacity: 1;
+  transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
 }

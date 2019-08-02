@@ -1,17 +1,56 @@
 .modern {
-  background: linear-gradient(
-    45deg,
-    rgb(11, 45, 126) 0%,
-    rgb(11, 45, 126) 44%,
-    rgb(21, 87, 153) 44%,
-    rgb(21, 87, 153) 45%,
-    rgb(30, 129, 181) 45%,
-    rgb(30, 129, 181) 61%,
-    rgb(40, 170, 208) 61%,
-    rgb(40, 170, 208) 67%,
-    rgb(49, 212, 235) 67%,
-    rgb(49, 212, 235) 100%
-  );
+  background: linear-gradient(90deg, #fff 0%, transparent 100%),
+    linear-gradient(0deg, #fff 0%, transparent 100%),
+    linear-gradient(
+      90deg,
+      rgba(230, 230, 230, 0.18) 0%,
+      rgba(230, 230, 230, 0.18) 54%,
+      rgba(61, 61, 61, 0.18) 54%,
+      rgba(61, 61, 61, 0.18) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(83, 83, 83, 0.18) 0%,
+      rgba(83, 83, 83, 0.18) 5%,
+      rgba(97, 97, 97, 0.18) 5%,
+      rgba(97, 97, 97, 0.18) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(62, 62, 62, 0.28) 0%,
+      rgba(62, 62, 62, 0.28) 45%,
+      rgba(243, 243, 243, 0.28) 45%,
+      rgba(243, 243, 243, 0.28) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(72, 72, 72, 0.18) 0%,
+      rgba(72, 72, 72, 0.18) 53%,
+      rgba(133, 133, 133, 0.18) 53%,
+      rgba(133, 133, 133, 0.18) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(30, 30, 30, 0.28) 0%,
+      rgba(30, 30, 30, 0.28) 48%,
+      rgba(104, 104, 104, 0.28) 48%,
+      rgba(104, 104, 104, 0.28) 100%
+    ),
+    linear-gradient(
+      45deg,
+      rgba(134, 134, 134, 0.24) 0%,
+      rgba(134, 134, 134, 0.24) 62%,
+      rgba(157, 157, 157, 0.24) 62%,
+      rgba(157, 157, 157, 0.24) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(175, 175, 175, 0.08) 0%,
+      rgba(175, 175, 175, 0.08) 65%,
+      rgba(87, 87, 87, 0.08) 65%,
+      rgba(87, 87, 87, 0.08) 100%
+    ),
+    linear-gradient(90deg, rgb(147, 147, 147), rgb(199, 199, 199));
   height: 92.2vh;
 }
 
@@ -32,35 +71,40 @@
   border-radius: 10px;
   padding: 10px;
   margin: 10px 2px;
-  background-color: #d1d1d1;
-  border: none;
+  background-color: #d1d1d100;
+  border: 1px solid white;
   font-size: 35px;
   color: #ffffff;
-  text-shadow: 2px 2px 5px white;
 }
 .calc-containerM {
   width: 300px;
-  background-color: #d1d1d1;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(8, 235, 178),
+    rgb(90, 5, 168)
+  );
   border-radius: 20px;
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
-  border: 1px solid #ffffff;
-  box-shadow: 6px 6px 5px rgb(190, 190, 190);
+  border: 1px solid rgb(90, 5, 168);
+  box-shadow: 6px 6px 5px rgba(8, 235, 178, 0.11);
 }
 .numButM {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
   font-size: 35px;
-  /*border-radius: 50%;*/
+  border-radius: 50%;
+  border: 1px solid white;
 }
 .mathButM {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
   font-size: 35px;
-  /*border-radius: 50%;*/
+  border-radius: 50%;
+  border: 1px solid white;
 }
 .equalButM {
   height: 59px;
@@ -68,21 +112,24 @@
   margin: 10px 4px;
   font-weight: bold;
   font-size: 25px;
-  /*border-radius: 45%;*/
+  border-radius: 45%;
+  border: 1px solid white;
 }
 .mButM {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
   font-size: 25px;
-  /*border-radius: 50%;*/
+  border-radius: 50%;
+  border: 1px solid white;
 }
 .aButM {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
   font-size: 25px;
-  /*border-radius: 50%;*/
+  border-radius: 50%;
+  border: 1px solid white;
 }
 
 .numButM,
@@ -99,11 +146,14 @@
 .mButM:hover,
 .equalButM:hover,
 .mathButM:hover {
-  color: rgb(255, 255, 255);
-  text-shadow: none;
   cursor: pointer;
+  color: rgb(253, 253, 253);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
+    0 0 40px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255),
+    0 0 90px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255),
+    0 0 150px rgb(255, 255, 255);
 }
 
 .btn {
-  background-color: #d1d1d1;
+  background-color: #d1d1d100;
 }

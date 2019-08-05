@@ -52,6 +52,7 @@
     ),
     linear-gradient(90deg, rgb(147, 147, 147), rgb(199, 199, 199));
   height: 92.2vh;
+  display: flex;
 }
 
 .modern h3 {
@@ -68,7 +69,7 @@
 .entryM {
   width: 265px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 2em / 5em;
   padding: 10px;
   margin: 10px 2px;
   background-color: #d1d1d100;
@@ -79,23 +80,31 @@
 .calc-containerM {
   width: 300px;
   background-image: linear-gradient(
-    to bottom right,
-    rgb(8, 235, 178),
-    rgb(90, 5, 168)
+    to top,
+    #a94bca,
+    #c03fb8,
+    #d136a5,
+    #e43294,
+    #f23482,
+    #fb3e70,
+    #ff545b,
+    #ff6d45,
+    #ff882e,
+    #ffa212
   );
   border-radius: 20px;
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
-  border: 1px solid rgb(90, 5, 168);
-  box-shadow: 6px 6px 5px rgba(8, 235, 178, 0.11);
+  border: 1px solid #ffa212;
+  box-shadow: 6px 6px 5px #a84bca4d;
 }
 .numButM {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
   font-size: 35px;
-  border-radius: 50%;
+  border-radius: 2em / 5em;
   border: 1px solid white;
 }
 .mathButM {
@@ -103,7 +112,7 @@
   width: 59px;
   margin: 10px 4px;
   font-size: 35px;
-  border-radius: 50%;
+  border-radius: 2em / 5em;
   border: 1px solid white;
 }
 .equalButM {
@@ -112,7 +121,7 @@
   margin: 10px 4px;
   font-weight: bold;
   font-size: 25px;
-  border-radius: 45%;
+  border-radius: 2em / 5em;
   border: 1px solid white;
 }
 .mButM {
@@ -120,7 +129,7 @@
   width: 59px;
   margin: 10px 4px;
   font-size: 25px;
-  border-radius: 50%;
+  border-radius: 2em / 5em;
   border: 1px solid white;
 }
 .aButM {
@@ -128,7 +137,7 @@
   width: 59px;
   margin: 10px 4px;
   font-size: 25px;
-  border-radius: 50%;
+  border-radius: 2em / 5em;
   border: 1px solid white;
 }
 
@@ -156,4 +165,105 @@
 
 .btn {
   background-color: #d1d1d100;
+}
+
+/* modernX */
+.containerMX {
+  margin: auto;
+  width: 330px;
+  padding: 10px;
+  text-align: center;
+}
+.entryMX {
+  width: 265px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 2px;
+  background-color: #d1d1d100;
+  border: 1px solid white;
+  font-size: 35px;
+  color: #ffffff;
+}
+.calc-containerMX {
+  width: 300px;
+  background-image: linear-gradient(0deg, #08aeea 0%, #2af598 100%);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 6px 6px 5px #08aeea4d;
+}
+.numButMX {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.mathButMX {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 35px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.equalButMX {
+  height: 59px;
+  width: 126px;
+  margin: 10px 4px;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 45%;
+  border: 1px solid white;
+}
+.mButMX {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.aButMX {
+  height: 59px;
+  width: 59px;
+  margin: 10px 4px;
+  font-size: 25px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.numButMX,
+.aButMX,
+.mButMX,
+.equalButMX,
+.mathButMX {
+  color: rgb(255, 255, 255);
+  text-shadow: none;
+}
+
+.numButMX:hover,
+.aButMX:hover,
+.mButMX:hover,
+.equalButMX:hover,
+.mathButMX:hover {
+  cursor: pointer;
+  color: rgb(253, 253, 253);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
+    0 0 40px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255),
+    0 0 90px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255),
+    0 0 150px rgb(255, 255, 255);
+}
+
+@media (max-width: 600px) {
+  .modern {
+    display: initial;
+  }
+  .modern h3 {
+    color: rgb(158, 158, 158);
+  }
 }

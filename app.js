@@ -207,7 +207,7 @@ const modernState = function(page) {
   document.querySelector('#content').innerHTML = `
   <section class='modern'>
     <div class="containerM">
-      <h3>modern.</h3>
+      <h3>modern. Y</h3>
       <div class="calc-containerM">
         <div class="row">
           <form name="calc">
@@ -388,6 +388,188 @@ const modernState = function(page) {
         </div>
       </div>
     </div>
+    <div class="containerM">
+      <h3>modern. X</h3>
+      <div class="calc-containerMX">
+        <div class="row">
+          <form name="calc">
+            <input
+              type="text"
+              id="entryMX"
+              class="entryMX text-right"
+              value="0"
+              readonly
+            />
+          </form>
+        </div>
+        <div class="row">
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX(7)"
+          >
+            7
+          </button>
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX(8)"
+          >
+            8
+          </button>
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX(9)"
+          >
+            9
+          </button>
+          <button
+            id="mathButMX"
+            type="button"
+            class="btn mathButMX"
+            onclick='mathButPressMX("+")'
+          >
+            +
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX(4)"
+          >
+            4
+          </button>
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX(5)"
+          >
+            5
+          </button>
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX(6)"
+          >
+            6
+          </button>
+          <button
+            id="mathButMX"
+            type="button"
+            class="btn mathButMX"
+            onclick='mathButPressMX("-")'
+          >
+            -
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX(1)"
+          >
+            1
+          </button>
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX(2)"
+          >
+            2
+          </button>
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX(3)"
+          >
+            3
+          </button>
+          <button
+            id="mathButMX"
+            type="button"
+            class="btn mathButMX"
+            onclick='mathButPressMX("*")'
+          >
+            *
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="clearButMX"
+            type="button"
+            class="btn aButMX"
+            onclick="clearButPressMX()"
+          >
+            AC
+          </button>
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX(0)"
+          >
+            0
+          </button>
+          <button
+            id="numButMX"
+            type="button"
+            class="btn numButMX"
+            onclick="numButPressMX('.')"
+          >
+            .
+          </button>
+          <button
+            id="mathButMX"
+            type="button"
+            class="btn mathButMX"
+            onclick='mathButPressMX("/")'
+          >
+            /
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="addMemButMX"
+            type="button"
+            class="btn mButMX"
+            onclick="copyButPressMX()"
+          >
+            MC
+          </button>
+          <button
+            id="pasteButMX"
+            type="button"
+            class="btn mButMX"
+            onclick="pasteButPressMX()"
+          >
+            MP
+          </button>
+          <button
+            id="equalButMX"
+            type="button"
+            class="btn equalButMX"
+            onclick="equalButPressMX()"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
   </section>
 `;
 };
@@ -431,6 +613,13 @@ futur.addEventListener('click', e => {
 // Modern
 modern.addEventListener('click', e => {
   page.change(new modernState());
+
+  e.preventDefault();
+});
+
+// ModernX
+modernX.addEventListener('click', e => {
+  page.change(new modernStateX());
 
   e.preventDefault();
 });

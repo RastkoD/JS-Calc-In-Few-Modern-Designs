@@ -164,3 +164,87 @@ function pasteButPressM(num) {
     newValM = valMemStoredM;
   }
 }
+
+// ModernX
+let prevValMX = '';
+let newValMX = '';
+let resultValMX = '';
+let mathOperatorMX = '';
+let decimalClickedMX = false;
+let valMemStoredMX = '';
+
+function numButPressMX(num) {
+  if (resultValMX) {
+    newValMX = num;
+    resultValMX = '';
+  } else {
+    if (num === '.') {
+      if (decimalClickedMX != true) {
+        newValMX += num;
+        decimalClickedMX = true;
+      }
+    } else {
+      newValMX += num;
+    }
+  }
+  document.getElementById('entryMX').value = newValMX;
+}
+
+function mathButPressMX(operator) {
+  if (!resultValMX) {
+    prevValMX = newValMX;
+  } else {
+    prevValMX = resultValMX;
+  }
+  newValMX = '';
+  decimalClickedMX = false;
+  mathOperatorMX = operator;
+  resultValMX = '';
+  document.getElementById('entryMX').value = '';
+}
+
+function equalButPressMX(num) {
+  decimalClickedMX = false;
+  prevValMX = parseFloat(prevValMX);
+  newValMX = parseFloat(newValMX);
+
+  switch (mathOperatorMX) {
+    case '+':
+      resultValMX = prevValMX + newValMX;
+      break;
+    case '-':
+      resultValMX = prevValMX - newValMX;
+      break;
+    case '*':
+      resultValMX = prevValMX * newValMX;
+      break;
+    case '/':
+      resultValMX = prevValMX / newValMX;
+      break;
+    default:
+      resultValMX = newValMX;
+  }
+
+  prevValMX = resultValMX;
+  document.getElementById('entryMX').value = resultValMX;
+}
+
+function clearButPressMX() {
+  prevValMX = '';
+  newValMX = '';
+  resultValMX = '';
+  mathOperatorMX = '';
+  decimalClickedMX = false;
+  document.getElementById('entryMX').value = '0';
+}
+
+function copyButPressMX(num) {
+  valMemStoredMX = document.getElementById('entryMX').value;
+}
+
+function pasteButPressMX(num) {
+  if (valMemStoredMX) {
+    document.getElementById('entryMX').value = valMemStoredMX;
+    newValMX = valMemStoredMX;
+  }
+}

@@ -215,7 +215,7 @@ const modernState = function(page) {
               type="text"
               id="entryM"
               class="entryM text-right"
-              value="0"
+              value="model Y"
               readonly
             />
           </form>
@@ -397,7 +397,7 @@ const modernState = function(page) {
               type="text"
               id="entryMX"
               class="entryMX text-right"
-              value="0"
+              value="model X"
               readonly
             />
           </form>

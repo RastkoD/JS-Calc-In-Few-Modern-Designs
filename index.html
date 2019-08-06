@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="modern.css" />
 
     <title>JavaScript Calc with Patterns</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -65,5 +66,18 @@
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
+    <script>
+      $('input:checkbox').change(function() {
+        if ($(this).is(':checked')) {
+          $('button').addClass('neon');
+          $('button').removeClass('disabled');
+          $('h3').addClass('neon');
+        } else {
+          $('button').removeClass('neon');
+          $('button').addClass('disabled');
+          $('h3').removeClass('neon');
+        }
+      });
+    </script>
   </body>
 </html>

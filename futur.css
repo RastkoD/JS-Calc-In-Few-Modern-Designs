@@ -61,6 +61,11 @@
   height: 92.2vh;
 }
 
+.disabled {
+  pointer-events: none;
+  opacity: 1 !important;
+}
+
 .futur h3 {
   color: rgb(255, 255, 255);
   margin-top: 15px;
@@ -83,15 +88,15 @@
   border-radius: 10px;
   padding: 10px;
   margin: 10px 2px;
-  background-color: #d1d1d1;
+  background-color: #b3b3b3;
   border: none;
   font-size: 35px;
-  color: #ffffff;
-  text-shadow: 2px 2px 5px white;
+  color: #ebebeb;
+  /* text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.473); */
 }
 .calc-container {
   width: 300px;
-  background-color: #d1d1d1;
+  background-color: #b3b3b3;
   border-radius: 20px;
   padding: 30px;
   margin-top: 50px;
@@ -104,6 +109,7 @@
   width: 59px;
   margin: 10px 4px;
   font-size: 35px;
+  color: #ffffff;
   /*border-radius: 50%;*/
 }
 .mathBut {
@@ -111,6 +117,7 @@
   width: 59px;
   margin: 10px 4px;
   font-size: 35px;
+  color: #ffffff;
   /*border-radius: 50%;*/
 }
 .equalBut {
@@ -119,6 +126,7 @@
   margin: 10px 4px;
   font-weight: bold;
   font-size: 25px;
+  color: #ffffff;
   /*border-radius: 45%;*/
 }
 .mBut {
@@ -126,6 +134,7 @@
   width: 59px;
   margin: 10px 4px;
   font-size: 25px;
+  color: #ffffff;
   /*border-radius: 50%;*/
 }
 .aBut {
@@ -133,14 +142,12 @@
   width: 59px;
   margin: 10px 4px;
   font-size: 25px;
+  color: #ffffff;
   /*border-radius: 50%;*/
 }
 .neon {
   color: rgb(253, 253, 253);
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
-    0 0 40px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255),
-    0 0 90px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255),
-    0 0 150px rgb(255, 255, 255);
+  text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 10px rgb(255, 255, 255);
 }
 .numBut:hover,
 .aBut:hover,
@@ -163,4 +170,69 @@
 
 html.is-animating .transition-fade {
   opacity: 0;
+}
+
+/* On/Off button */
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(230, 230, 230);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgb(212, 212, 212);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border: 2px solid rgb(230, 230, 230);
+}
+
+input:checked + .slider {
+  background-color: rgb(212, 212, 212);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00000057;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

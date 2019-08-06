@@ -15,11 +15,15 @@ const futurState = function(page) {
   document.querySelector('#heading').textContent = null;
   document.querySelector('#content').innerHTML = `
   <section class='futur'>
-     <div class="container">
+   <div class="container">
      <h3>futur.</h3>
       <div class="calc-container">
         <div class="row">
           <form name="calc">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
             <input
               type="text"
               id="entry"
@@ -33,7 +37,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress(7)"
           >
             7
@@ -41,7 +45,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress(8)"
           >
             8
@@ -49,7 +53,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress(9)"
           >
             9
@@ -57,7 +61,7 @@ const futurState = function(page) {
           <button
             id="mathBut"
             type="button"
-            class="btn neon mathBut"
+            class="btn disabled mathBut"
             onclick='mathButPress("+")'
           >
             +
@@ -68,7 +72,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress(4)"
           >
             4
@@ -76,7 +80,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress(5)"
           >
             5
@@ -84,7 +88,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress(6)"
           >
             6
@@ -92,7 +96,7 @@ const futurState = function(page) {
           <button
             id="mathBut"
             type="button"
-            class="btn neon mathBut"
+            class="btn disabled mathBut"
             onclick='mathButPress("-")'
           >
             -
@@ -103,7 +107,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress(1)"
           >
             1
@@ -111,7 +115,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress(2)"
           >
             2
@@ -119,7 +123,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress(3)"
           >
             3
@@ -127,7 +131,7 @@ const futurState = function(page) {
           <button
             id="mathBut"
             type="button"
-            class="btn neon mathBut"
+            class="btn disabled mathBut"
             onclick='mathButPress("*")'
           >
             *
@@ -138,7 +142,7 @@ const futurState = function(page) {
           <button
             id="clearBut"
             type="button"
-            class="btn neon aBut"
+            class="btn disabled aBut"
             onclick="clearButPress()"
           >
             AC
@@ -146,7 +150,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress(0)"
           >
             0
@@ -154,7 +158,7 @@ const futurState = function(page) {
           <button
             id="numBut"
             type="button"
-            class="btn neon numBut"
+            class="btn disabled numBut"
             onclick="numButPress('.')"
           >
             .
@@ -162,7 +166,7 @@ const futurState = function(page) {
           <button
             id="mathBut"
             type="button"
-            class="btn neon mathBut"
+            class="btn disabled mathBut"
             onclick='mathButPress("/")'
           >
             /
@@ -173,7 +177,7 @@ const futurState = function(page) {
           <button
             id="addMemBut"
             type="button"
-            class="btn neon mBut"
+            class="btn disabled mBut"
             onclick="copyButPress()"
           >
             MC
@@ -181,7 +185,7 @@ const futurState = function(page) {
           <button
             id="pasteBut"
             type="button"
-            class="btn neon mBut"
+            class="btn disabled mBut"
             onclick="pasteButPress()"
           >
             MP
@@ -189,7 +193,7 @@ const futurState = function(page) {
           <button
             id="equalBut"
             type="button"
-            class="btn neon equalBut"
+            class="btn disabled equalBut"
             onclick="equalButPress()"
           >
             =

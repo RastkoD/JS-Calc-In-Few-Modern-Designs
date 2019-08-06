@@ -69,12 +69,12 @@
     <script>
       $('input:checkbox').change(function() {
         if ($(this).is(':checked')) {
-          $('button').addClass('neon');
-          $('button').removeClass('disabled');
+          $('button:not(:first)').addClass('neon');
+          $('button:not(:first)').removeClass('disabled');
           $('h3').addClass('neon');
         } else {
-          $('button').removeClass('neon');
-          $('button').addClass('disabled');
+          $('button:not(:first)').removeClass('neon');
+          $('button:not(:first)').addClass('disabled');
           $('h3').removeClass('neon');
         }
       });

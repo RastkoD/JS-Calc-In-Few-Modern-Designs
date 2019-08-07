@@ -578,21 +578,376 @@ const modernState = function(page) {
 `;
 };
 
-// Contact State
-const contactState = function(page) {
-  document.querySelector('#heading').textContent = 'Contact Us';
+// Blck State
+const blckState = function(page) {
+  document.querySelector('#heading').textContent = null;
   document.querySelector('#content').innerHTML = `
-  <form>
-    <div class="form-group">
-      <label>Name</label>
-      <input type="text" class="form-control">
+  <section class='blck'>
+    <div class="containerB">
+      <h3>.bLcK</h3>
+      <div class="calc-containerB">
+        <div class="row">
+          <form name="calc">
+            <input
+              type="text"
+              id="entryB"
+              class="entryB text-right"
+              value="0"
+              readonly
+            />
+          </form>
+        </div>
+        <div class="row">
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB(7)"
+          >
+            7
+          </button>
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB(8)"
+          >
+            8
+          </button>
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB(9)"
+          >
+            9
+          </button>
+          <button
+            id="mathButB"
+            type="button"
+            class="btn mathButB"
+            onclick='mathButPressB("+")'
+          >
+            +
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB(4)"
+          >
+            4
+          </button>
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB(5)"
+          >
+            5
+          </button>
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB(6)"
+          >
+            6
+          </button>
+          <button
+            id="mathButB"
+            type="button"
+            class="btn mathButB"
+            onclick='mathButPressB("-")'
+          >
+            -
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB(1)"
+          >
+            1
+          </button>
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB(2)"
+          >
+            2
+          </button>
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB(3)"
+          >
+            3
+          </button>
+          <button
+            id="mathButB"
+            type="button"
+            class="btn mathButB"
+            onclick='mathButPressB("*")'
+          >
+            *
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="clearButB"
+            type="button"
+            class="btn aButB"
+            onclick="clearButPressB()"
+          >
+            AC
+          </button>
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB(0)"
+          >
+            0
+          </button>
+          <button
+            id="numButB"
+            type="button"
+            class="btn numButB"
+            onclick="numButPressB('.')"
+          >
+            .
+          </button>
+          <button
+            id="mathButB"
+            type="button"
+            class="btn mathButB"
+            onclick='mathButPressB("/")'
+          >
+            /
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="addMemButB"
+            type="button"
+            class="btn mButB"
+            onclick="copyButPressB()"
+          >
+            MC
+          </button>
+          <button
+            id="pasteButB"
+            type="button"
+            class="btn mButB"
+            onclick="pasteButPressB()"
+          >
+            MP
+          </button>
+          <button
+            id="equalButB"
+            type="button"
+            class="btn equalButB"
+            onclick="equalButPressB()"
+          >
+            =
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="form-group">
-    <label>Email address</label>
-    <input type="email" class="form-control">
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+    <div class="containerB">
+      <h3>Dark</h3>
+      <div class="calc-containerBX">
+        <div class="row">
+          <form name="calc">
+            <input
+              type="text"
+              id="entryBX"
+              class="entryBX text-right"
+              value="0"
+              readonly
+            />
+          </form>
+        </div>
+        <div class="row">
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX(7)"
+          >
+            7
+          </button>
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX(8)"
+          >
+            8
+          </button>
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX(9)"
+          >
+            9
+          </button>
+          <button
+            id="mathButBX"
+            type="button"
+            class="btn mathButBX"
+            onclick='mathButPressBX("+")'
+          >
+            +
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX(4)"
+          >
+            4
+          </button>
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX(5)"
+          >
+            5
+          </button>
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX(6)"
+          >
+            6
+          </button>
+          <button
+            id="mathButBX"
+            type="button"
+            class="btn mathButBX"
+            onclick='mathButPressBX("-")'
+          >
+            -
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX(1)"
+          >
+            1
+          </button>
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX(2)"
+          >
+            2
+          </button>
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX(3)"
+          >
+            3
+          </button>
+          <button
+            id="mathButBX"
+            type="button"
+            class="btn mathButBX"
+            onclick='mathButPressBX("*")'
+          >
+            *
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="clearButBX"
+            type="button"
+            class="btn aButBX"
+            onclick="clearButPressBX()"
+          >
+            AC
+          </button>
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX(0)"
+          >
+            0
+          </button>
+          <button
+            id="numButBX"
+            type="button"
+            class="btn numButBX"
+            onclick="numButPressBX('.')"
+          >
+            .
+          </button>
+          <button
+            id="mathButBX"
+            type="button"
+            class="btn mathButBX"
+            onclick='mathButPressBX("/")'
+          >
+            /
+          </button>
+        </div>
+
+        <div class="row">
+          <button
+            id="addMemButBX"
+            type="button"
+            class="btn mButBX"
+            onclick="copyButPressBX()"
+          >
+            MC
+          </button>
+          <button
+            id="pasteButBX"
+            type="button"
+            class="btn mButBX"
+            onclick="pasteButPressBX()"
+          >
+            MP
+          </button>
+          <button
+            id="equalButBX"
+            type="button"
+            class="btn equalButBX"
+            onclick="equalButPressBX()"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 `;
 };
 
@@ -605,7 +960,7 @@ page.init();
 // UI Vars
 const futur = document.getElementById('futur'),
   modern = document.getElementById('modern'),
-  contact = document.getElementById('contact');
+  blck = document.getElementById('blck');
 
 // Futur.
 futur.addEventListener('click', e => {
@@ -621,16 +976,9 @@ modern.addEventListener('click', e => {
   e.preventDefault();
 });
 
-// ModernX
-modernX.addEventListener('click', e => {
-  page.change(new modernStateX());
-
-  e.preventDefault();
-});
-
-// Contact
-contact.addEventListener('click', e => {
-  page.change(new contactState());
+// Blck
+blck.addEventListener('click', e => {
+  page.change(new blckState());
 
   e.preventDefault();
 });

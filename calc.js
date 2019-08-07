@@ -248,3 +248,171 @@ function pasteButPressMX(num) {
     newValMX = valMemStoredMX;
   }
 }
+
+// Black
+let prevValB = '';
+let newValB = '';
+let resultValB = '';
+let mathOperatorB = '';
+let decimalClickedB = false;
+let valMemStoredB = '';
+
+function numButPressB(num) {
+  if (resultValB) {
+    newValB = num;
+    resultValB = '';
+  } else {
+    if (num === '.') {
+      if (decimalClickedB != true) {
+        newValB += num;
+        decimalClickedB = true;
+      }
+    } else {
+      newValB += num;
+    }
+  }
+  document.getElementById('entryB').value = newValB;
+}
+
+function mathButPressB(operator) {
+  if (!resultValB) {
+    prevValB = newValB;
+  } else {
+    prevValB = resultValB;
+  }
+  newValB = '';
+  decimalClickedB = false;
+  mathOperatorB = operator;
+  resultValB = '';
+  document.getElementById('entryB').value = '';
+}
+
+function equalButPressB(num) {
+  decimalClickedB = false;
+  prevValB = parseFloat(prevValB);
+  newValB = parseFloat(newValB);
+
+  switch (mathOperatorB) {
+    case '+':
+      resultValB = prevValB + newValB;
+      break;
+    case '-':
+      resultValB = prevValB - newValB;
+      break;
+    case '*':
+      resultValB = prevValB * newValB;
+      break;
+    case '/':
+      resultValB = prevValB / newValB;
+      break;
+    default:
+      resultValB = newValB;
+  }
+
+  prevValB = resultValB;
+  document.getElementById('entryB').value = resultValB;
+}
+
+function clearButPressB() {
+  prevValB = '';
+  newValB = '';
+  resultValB = '';
+  mathOperatorB = '';
+  decimalClickedB = false;
+  document.getElementById('entryB').value = '0';
+}
+
+function copyButPressB(num) {
+  valMemStoredB = document.getElementById('entryB').value;
+}
+
+function pasteButPressB(num) {
+  if (valMemStoredB) {
+    document.getElementById('entryB').value = valMemStoredB;
+    newValB = valMemStoredB;
+  }
+}
+
+// Dark
+let prevValBX = '';
+let newValBX = '';
+let resultValBX = '';
+let mathOperatorBX = '';
+let decimalClickedBX = false;
+let valMemStoredBX = '';
+
+function numButPressBX(num) {
+  if (resultValBX) {
+    newValBX = num;
+    resultValBX = '';
+  } else {
+    if (num === '.') {
+      if (decimalClickedBX != true) {
+        newValBX += num;
+        decimalClickedBX = true;
+      }
+    } else {
+      newValBX += num;
+    }
+  }
+  document.getElementById('entryBX').value = newValBX;
+}
+
+function mathButPressBX(operator) {
+  if (!resultValBX) {
+    prevValBX = newValBX;
+  } else {
+    prevValBX = resultValBX;
+  }
+  newValBX = '';
+  decimalClickedBX = false;
+  mathOperatorBX = operator;
+  resultValBX = '';
+  document.getElementById('entryBX').value = '';
+}
+
+function equalButPressBX(num) {
+  decimalClickedBX = false;
+  prevValBX = parseFloat(prevValBX);
+  newValBX = parseFloat(newValBX);
+
+  switch (mathOperatorBX) {
+    case '+':
+      resultValBX = prevValBX + newValBX;
+      break;
+    case '-':
+      resultValBX = prevValBX - newValBX;
+      break;
+    case '*':
+      resultValBX = prevValBX * newValBX;
+      break;
+    case '/':
+      resultValBX = prevValBX / newValBX;
+      break;
+    default:
+      resultValBX = newValBX;
+  }
+
+  prevValBX = resultValBX;
+  document.getElementById('entryBX').value = resultValBX;
+}
+
+function clearButPressBX() {
+  prevValBX = '';
+  newValBX = '';
+  resultValBX = '';
+  mathOperatorBX = '';
+  decimalClickedBX = false;
+  document.getElementById('entryBX').value = '0';
+}
+
+function copyButPressBX(num) {
+  valMemStoredBX = document.getElementById('entryBX').value;
+}
+
+function pasteButPressBX(num) {
+  if (valMemStoredBX) {
+    document.getElementById('entryBX').value = valMemStoredBX;
+    newValBX = valMemStoredBX;
+  }
+}

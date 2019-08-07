@@ -1,4 +1,4 @@
-.modern {
+.blck {
   background: linear-gradient(90deg, #fff 0%, transparent 100%),
     linear-gradient(0deg, #fff 0%, transparent 100%),
     linear-gradient(
@@ -55,18 +55,18 @@
   display: flex;
 }
 
-.modern h3 {
+.blck h3 {
   color: rgb(255, 255, 255);
   margin-top: 15px;
 }
 
-.containerM {
+.containerB {
   margin: auto;
   width: 330px;
   padding: 10px;
   text-align: center;
 }
-.entryM {
+.entryB {
   width: 265px;
   height: 50px;
   border-radius: 2em / 5em;
@@ -77,7 +77,7 @@
   font-size: 35px;
   color: #ffffff;
 }
-.calc-containerM {
+.calc-containerB {
   width: 300px;
   background-image: linear-gradient(
     to top,
@@ -99,7 +99,7 @@
   border: 1px solid #ffa212;
   box-shadow: 6px 6px 5px #a84bca3f;
 }
-.numButM {
+.numButB {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
@@ -107,7 +107,7 @@
   border-radius: 2em / 5em;
   border: 1px solid white;
 }
-.mathButM {
+.mathButB {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
@@ -115,7 +115,7 @@
   border-radius: 2em / 5em;
   border: 1px solid white;
 }
-.equalButM {
+.equalButB {
   height: 59px;
   width: 126px;
   margin: 10px 4px;
@@ -124,7 +124,7 @@
   border-radius: 2em / 5em;
   border: 1px solid white;
 }
-.mButM {
+.mButB {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
@@ -132,7 +132,7 @@
   border-radius: 2em / 5em;
   border: 1px solid white;
 }
-.aButM {
+.aButB {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
@@ -141,20 +141,20 @@
   border: 1px solid white;
 }
 
-.numButM,
-.aButM,
-.mButM,
-.equalButM,
-.mathButM {
+.numButB,
+.aButB,
+.mButB,
+.equalButB,
+.mathButB {
   color: rgb(255, 255, 255);
   text-shadow: none;
 }
 
-.numButM:hover,
-.aButM:hover,
-.mButM:hover,
-.equalButM:hover,
-.mathButM:hover {
+.numButB:hover,
+.aButB:hover,
+.mButB:hover,
+.equalButB:hover,
+.mathButB:hover {
   cursor: pointer;
   color: rgb(253, 253, 253);
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
@@ -167,14 +167,14 @@
   background-color: #d1d1d100;
 }
 
-/* modernX */
-.containerMX {
+/* Dark */
+.containerBX {
   margin: auto;
   width: 330px;
   padding: 10px;
   text-align: center;
 }
-.entryMX {
+.entryBX {
   width: 265px;
   height: 50px;
   border-radius: 10px;
@@ -185,7 +185,7 @@
   font-size: 35px;
   color: #ffffff;
 }
-.calc-containerMX {
+.calc-containerBX {
   width: 300px;
   background-image: linear-gradient(to top left, #08aeea 0%, #2af598 100%);
   border-radius: 20px;
@@ -195,7 +195,7 @@
   border: 1px solid rgb(255, 255, 255);
   box-shadow: 6px 6px 5px #08aeea42;
 }
-.numButMX {
+.numButBX {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
@@ -203,7 +203,7 @@
   border-radius: 50%;
   border: 1px solid white;
 }
-.mathButMX {
+.mathButBX {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
@@ -211,7 +211,7 @@
   border-radius: 50%;
   border: 1px solid white;
 }
-.equalButMX {
+.equalButBX {
   height: 59px;
   width: 126px;
   margin: 10px 4px;
@@ -220,7 +220,7 @@
   border-radius: 45%;
   border: 1px solid white;
 }
-.mButMX {
+.mButBX {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
@@ -228,7 +228,7 @@
   border-radius: 50%;
   border: 1px solid white;
 }
-.aButMX {
+.aButBX {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
@@ -237,20 +237,20 @@
   border: 1px solid white;
 }
 
-.numButMX,
-.aButMX,
-.mButMX,
-.equalButMX,
-.mathButMX {
+.numButBX,
+.aButBX,
+.mButBX,
+.equalButBX,
+.mathButBX {
   color: rgb(255, 255, 255);
   text-shadow: none;
 }
 
-.numButMX:hover,
-.aButMX:hover,
-.mButMX:hover,
-.equalButMX:hover,
-.mathButMX:hover {
+.numButBX:hover,
+.aButBX:hover,
+.mButBX:hover,
+.equalButBX:hover,
+.mathButBX:hover {
   cursor: pointer;
   color: rgb(253, 253, 253);
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
@@ -260,10 +260,10 @@
 }
 
 @media (max-width: 600px) {
-  .modern {
+  .blck {
     display: initial;
   }
-  .modern h3 {
+  .blck h3 {
     color: rgb(158, 158, 158);
   }
 }

@@ -1,58 +1,26 @@
 .blck {
-  background: linear-gradient(90deg, #fff 0%, transparent 100%),
-    linear-gradient(0deg, #fff 0%, transparent 100%),
-    linear-gradient(
-      90deg,
-      rgba(230, 230, 230, 0.18) 0%,
-      rgba(230, 230, 230, 0.18) 54%,
-      rgba(61, 61, 61, 0.18) 54%,
-      rgba(61, 61, 61, 0.18) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgba(83, 83, 83, 0.18) 0%,
-      rgba(83, 83, 83, 0.18) 5%,
-      rgba(97, 97, 97, 0.18) 5%,
-      rgba(97, 97, 97, 0.18) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(62, 62, 62, 0.28) 0%,
-      rgba(62, 62, 62, 0.28) 45%,
-      rgba(243, 243, 243, 0.28) 45%,
-      rgba(243, 243, 243, 0.28) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(72, 72, 72, 0.18) 0%,
-      rgba(72, 72, 72, 0.18) 53%,
-      rgba(133, 133, 133, 0.18) 53%,
-      rgba(133, 133, 133, 0.18) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(30, 30, 30, 0.28) 0%,
-      rgba(30, 30, 30, 0.28) 48%,
-      rgba(104, 104, 104, 0.28) 48%,
-      rgba(104, 104, 104, 0.28) 100%
-    ),
-    linear-gradient(
-      45deg,
-      rgba(134, 134, 134, 0.24) 0%,
-      rgba(134, 134, 134, 0.24) 62%,
-      rgba(157, 157, 157, 0.24) 62%,
-      rgba(157, 157, 157, 0.24) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(175, 175, 175, 0.08) 0%,
-      rgba(175, 175, 175, 0.08) 65%,
-      rgba(87, 87, 87, 0.08) 65%,
-      rgba(87, 87, 87, 0.08) 100%
-    ),
-    linear-gradient(90deg, rgb(147, 147, 147), rgb(199, 199, 199));
+  background-image: linear-gradient(
+    to right,
+    #290123,
+    rgb(28, 3, 61),
+    #0b0116,
+    #000000,
+    #1e0152,
+    rgb(21, 2, 51)
+  );
   height: 92.2vh;
   display: flex;
+  background-size: 250%;
+  animation: bg-animation 20s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 .blck h3 {
@@ -73,47 +41,36 @@
   padding: 10px;
   margin: 10px 2px;
   background-color: #d1d1d100;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0);
   font-size: 35px;
-  color: #ffffff;
+  color: rgb(110, 240, 90);
 }
 .calc-containerB {
   width: 300px;
-  background-image: linear-gradient(
-    to top,
-    #a94bca,
-    #c03fb8,
-    #d136a5,
-    #e43294,
-    #f23482,
-    #fb3e70,
-    #ff545b,
-    #ff6d45,
-    #ff882e,
-    #ffa212
-  );
-  border-radius: 20px;
+  background-color: #000000;
+  background: linear-gradient(to right, #0c1325, #020b0f, #020b0f, #0c1325);
+  border-radius: 13% 87% 9% 91% / 86% 13% 87% 14%;
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
-  border: 1px solid #ffa212;
-  box-shadow: 6px 6px 5px #a84bca3f;
+  border: 1px solid rgb(110, 240, 90);
+  box-shadow: 6px 6px 5px rgba(110, 240, 90, 0.116);
 }
 .numButB {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
   font-size: 35px;
-  border-radius: 2em / 5em;
-  border: 1px solid white;
+  border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+  border: 1px solid rgb(110, 240, 90);
 }
 .mathButB {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
   font-size: 35px;
-  border-radius: 2em / 5em;
-  border: 1px solid white;
+  border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+  border: 1px solid rgb(110, 240, 90);
 }
 .equalButB {
   height: 59px;
@@ -121,24 +78,24 @@
   margin: 10px 4px;
   font-weight: bold;
   font-size: 25px;
-  border-radius: 2em / 5em;
-  border: 1px solid white;
+  border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+  border: 1px solid rgb(110, 240, 90);
 }
 .mButB {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
   font-size: 25px;
-  border-radius: 2em / 5em;
-  border: 1px solid white;
+  border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+  border: 1px solid rgb(110, 240, 90);
 }
 .aButB {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
   font-size: 25px;
-  border-radius: 2em / 5em;
-  border: 1px solid white;
+  border-radius: 50% 50% 50% 50% / 65% 65% 35% 35%;
+  border: 1px solid rgb(110, 240, 90);
 }
 
 .numButB,
@@ -146,7 +103,7 @@
 .mButB,
 .equalButB,
 .mathButB {
-  color: rgb(255, 255, 255);
+  color: rgb(110, 240, 90);
   text-shadow: none;
 }
 
@@ -157,14 +114,10 @@
 .mathButB:hover {
   cursor: pointer;
   color: rgb(253, 253, 253);
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
-    0 0 40px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255),
-    0 0 90px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255),
-    0 0 150px rgb(255, 255, 255);
-}
-
-.btn {
-  background-color: #d1d1d100;
+  text-shadow: 0 0 5px rgb(110, 240, 90), 0 0 10px rgb(110, 240, 90),
+    0 0 20px rgb(110, 240, 90), 0 0 40px rgb(110, 240, 90),
+    0 0 80px rgb(110, 240, 90), 0 0 90px rgb(110, 240, 90),
+    0 0 100px rgb(110, 240, 90), 0 0 150px rgb(110, 240, 90);
 }
 
 /* Dark */

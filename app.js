@@ -584,7 +584,7 @@ const blckState = function(page) {
   document.querySelector('#content').innerHTML = `
   <section class='blck'>
     <div class="containerB">
-      <h3>.bLcK</h3>
+      <h3 style='color:rgb(110, 240, 90);'>nymph.</h3>
       <div class="calc-containerB">
         <div class="row">
           <form name="calc">

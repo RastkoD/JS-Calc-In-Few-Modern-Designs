@@ -1,7 +1,7 @@
 # JS modern Calculator (a few different designs) 
 #### Futuristic minimalist style calc, modern vibrant gredients...
 
-## [DEMO](https://jscalcdesigns.netlify.com/)
+:rocket: ### [DEMO](https://jscalcdesigns.netlify.com/)
 
 # What I learned
 

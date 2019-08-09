@@ -69,6 +69,8 @@
 .futur h3 {
   color: rgb(255, 255, 255);
   margin-top: 15px;
+  font-size: 3em;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .navbar {
@@ -161,15 +163,6 @@
 
 .btn {
   background-color: #d1d1d1;
-}
-
-.transition-fade {
-  opacity: 1;
-  transition: 500ms;
-}
-
-html.is-animating .transition-fade {
-  opacity: 0;
 }
 
 /* On/Off button */

@@ -211,7 +211,7 @@ const modernState = function(page) {
   document.querySelector('#content').innerHTML = `
   <section class='modern'>
     <div class="containerM">
-      <h3>modern. Y</h3>
+      <h3 class='firstM'>modern Y</h3>
       <div class="calc-containerM">
         <div class="row">
           <form name="calc">
@@ -219,7 +219,7 @@ const modernState = function(page) {
               type="text"
               id="entryM"
               class="entryM text-right"
-              value="model Y"
+              value="Y"
               readonly
             />
           </form>
@@ -393,7 +393,7 @@ const modernState = function(page) {
       </div>
     </div>
     <div class="containerM">
-      <h3>modern. X</h3>
+      <h3 class='firstMX'>modern X</h3>
       <div class="calc-containerMX">
         <div class="row">
           <form name="calc">
@@ -401,7 +401,7 @@ const modernState = function(page) {
               type="text"
               id="entryMX"
               class="entryMX text-right"
-              value="model X"
+              value="X"
               readonly
             />
           </form>
@@ -584,7 +584,7 @@ const blckState = function(page) {
   document.querySelector('#content').innerHTML = `
   <section class='blck'>
     <div class="containerB">
-      <h3 style='color:rgb(110, 240, 90);'>nymph.</h3>
+      <h3 style='color:rgb(110, 240, 90);'>dryad.</h3>
       <div class="calc-containerB">
         <div class="row">
           <form name="calc">
@@ -766,7 +766,7 @@ const blckState = function(page) {
       </div>
     </div>
     <div class="containerB">
-      <h3>Dark</h3>
+      <h3 style='color:rgb(173, 79, 161);'>nymph.</h3>
       <div class="calc-containerBX">
         <div class="row">
           <form name="calc">
@@ -783,7 +783,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX leftBtn"
             onclick="numButPressBX(7)"
           >
             7
@@ -791,7 +791,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX midLeftBtn"
             onclick="numButPressBX(8)"
           >
             8
@@ -799,7 +799,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX midRightBtn"
             onclick="numButPressBX(9)"
           >
             9
@@ -807,7 +807,7 @@ const blckState = function(page) {
           <button
             id="mathButBX"
             type="button"
-            class="btn mathButBX"
+            class="btn mathButBX rightBtn"
             onclick='mathButPressBX("+")'
           >
             +
@@ -818,7 +818,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX leftBtn"
             onclick="numButPressBX(4)"
           >
             4
@@ -826,7 +826,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX midLeftBtn"
             onclick="numButPressBX(5)"
           >
             5
@@ -834,7 +834,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX midRightBtn"
             onclick="numButPressBX(6)"
           >
             6
@@ -842,7 +842,7 @@ const blckState = function(page) {
           <button
             id="mathButBX"
             type="button"
-            class="btn mathButBX"
+            class="btn mathButBX rightBtn"
             onclick='mathButPressBX("-")'
           >
             -
@@ -853,7 +853,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX leftBtn"
             onclick="numButPressBX(1)"
           >
             1
@@ -861,7 +861,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX midLeftBtn"
             onclick="numButPressBX(2)"
           >
             2
@@ -869,7 +869,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX midRightBtn"
             onclick="numButPressBX(3)"
           >
             3
@@ -877,7 +877,7 @@ const blckState = function(page) {
           <button
             id="mathButBX"
             type="button"
-            class="btn mathButBX"
+            class="btn mathButBX rightBtn"
             onclick='mathButPressBX("*")'
           >
             *
@@ -888,7 +888,7 @@ const blckState = function(page) {
           <button
             id="clearButBX"
             type="button"
-            class="btn aButBX"
+            class="btn aButBX leftBtn"
             onclick="clearButPressBX()"
           >
             AC
@@ -896,7 +896,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX midLeftBtn"
             onclick="numButPressBX(0)"
           >
             0
@@ -904,7 +904,7 @@ const blckState = function(page) {
           <button
             id="numButBX"
             type="button"
-            class="btn numButBX"
+            class="btn numButBX midRightBtn"
             onclick="numButPressBX('.')"
           >
             .
@@ -912,7 +912,7 @@ const blckState = function(page) {
           <button
             id="mathButBX"
             type="button"
-            class="btn mathButBX"
+            class="btn mathButBX rightBtn"
             onclick='mathButPressBX("/")'
           >
             /
@@ -923,7 +923,7 @@ const blckState = function(page) {
           <button
             id="addMemButBX"
             type="button"
-            class="btn mButBX"
+            class="btn mButBX leftBtn"
             onclick="copyButPressBX()"
           >
             MC
@@ -931,7 +931,7 @@ const blckState = function(page) {
           <button
             id="pasteButBX"
             type="button"
-            class="btn mButBX"
+            class="btn mButBX midLeftBtn"
             onclick="pasteButPressBX()"
           >
             MP

@@ -1,63 +1,53 @@
 .modern {
-  background: linear-gradient(90deg, #fff 0%, transparent 100%),
-    linear-gradient(0deg, #fff 0%, transparent 100%),
-    linear-gradient(
-      90deg,
-      rgba(230, 230, 230, 0.18) 0%,
-      rgba(230, 230, 230, 0.18) 54%,
-      rgba(61, 61, 61, 0.18) 54%,
-      rgba(61, 61, 61, 0.18) 100%
-    ),
-    linear-gradient(
-      90deg,
-      rgba(83, 83, 83, 0.18) 0%,
-      rgba(83, 83, 83, 0.18) 5%,
-      rgba(97, 97, 97, 0.18) 5%,
-      rgba(97, 97, 97, 0.18) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(62, 62, 62, 0.28) 0%,
-      rgba(62, 62, 62, 0.28) 45%,
-      rgba(243, 243, 243, 0.28) 45%,
-      rgba(243, 243, 243, 0.28) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(72, 72, 72, 0.18) 0%,
-      rgba(72, 72, 72, 0.18) 53%,
-      rgba(133, 133, 133, 0.18) 53%,
-      rgba(133, 133, 133, 0.18) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(30, 30, 30, 0.28) 0%,
-      rgba(30, 30, 30, 0.28) 48%,
-      rgba(104, 104, 104, 0.28) 48%,
-      rgba(104, 104, 104, 0.28) 100%
-    ),
-    linear-gradient(
-      45deg,
-      rgba(134, 134, 134, 0.24) 0%,
-      rgba(134, 134, 134, 0.24) 62%,
-      rgba(157, 157, 157, 0.24) 62%,
-      rgba(157, 157, 157, 0.24) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(175, 175, 175, 0.08) 0%,
-      rgba(175, 175, 175, 0.08) 65%,
-      rgba(87, 87, 87, 0.08) 65%,
-      rgba(87, 87, 87, 0.08) 100%
-    ),
-    linear-gradient(90deg, rgb(147, 147, 147), rgb(199, 199, 199));
+  background: #faf7f7;
   height: 92.2vh;
   display: flex;
 }
 
 .modern h3 {
-  color: rgb(255, 255, 255);
   margin-top: 15px;
+  font-family: 'Audiowide', cursive;
+}
+
+.firstM {
+  background-image: linear-gradient(
+    to left,
+    #a94bca,
+    #c03fb8,
+    #d136a5,
+    #e43294,
+    #f23482,
+    #fb3e70,
+    #ff545b,
+    #ff6d45,
+    #ff882e,
+    #ffa212
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 3em;
+  font-weight: bold;
+  background-size: 800%;
+  animation: txt-animation 5s infinite alternate;
+}
+
+.firstMX {
+  background-image: linear-gradient(to top left, #01bbff 0%, #0ef78e 100%);
+  background-clip: text;
+  color: transparent;
+  font-size: 3em;
+  font-weight: bold;
+  background-size: 800%;
+  animation: txt-animation 5s infinite alternate;
+}
+
+@keyframes txt-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 .containerM {
@@ -261,9 +251,8 @@
 
 @media (max-width: 600px) {
   .modern {
-    display: initial;
-  }
-  .modern h3 {
-    color: rgb(158, 158, 158);
+    display: flex;
+    flex-wrap: wrap;
+    height: 1500px;
   }
 }

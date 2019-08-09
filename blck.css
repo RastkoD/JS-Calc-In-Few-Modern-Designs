@@ -1,17 +1,18 @@
 .blck {
   background-image: linear-gradient(
     to right,
-    #290123,
-    rgb(28, 3, 61),
+    #012706,
+    #012706,
+    rgb(0, 26, 10),
     #0b0116,
     #000000,
-    #1e0152,
-    rgb(21, 2, 51)
+    rgb(21, 2, 51),
+    #1e0152
   );
   height: 92.2vh;
   display: flex;
   background-size: 250%;
-  animation: bg-animation 20s infinite alternate;
+  animation: bg-animation 15s infinite alternate;
 }
 
 @keyframes bg-animation {
@@ -26,8 +27,10 @@
 .blck h3 {
   color: rgb(255, 255, 255);
   margin-top: 15px;
+  font-family: 'Architects Daughter', cursive;
 }
 
+/* Dryad */
 .containerB {
   margin: auto;
   width: 330px;
@@ -120,7 +123,7 @@
     0 0 100px rgb(110, 240, 90), 0 0 150px rgb(110, 240, 90);
 }
 
-/* Dark */
+/* Nymph */
 .containerBX {
   margin: auto;
   width: 330px;
@@ -134,27 +137,47 @@
   padding: 10px;
   margin: 10px 2px;
   background-color: #d1d1d100;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0);
   font-size: 35px;
-  color: #ffffff;
+  color: rgb(173, 79, 161);
 }
 .calc-containerBX {
   width: 300px;
-  background-image: linear-gradient(to top left, #08aeea 0%, #2af598 100%);
-  border-radius: 20px;
+  background-image: linear-gradient(
+    to bottom left,
+    #a602ac,
+    #7d048d,
+    #680361,
+    #33102e,
+    #1d091a,
+    #0f050e
+  );
+  background-size: 400%;
+  animation: nm-animation 15s infinite alternate;
+  border-radius: 94% 6% 91% 9% / 11% 85% 15% 89%;
   padding: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
-  border: 1px solid rgb(255, 255, 255);
-  box-shadow: 6px 6px 5px #08aeea42;
+  border: 1px solid rgb(240, 155, 228);
+  box-shadow: 6px 6px 5px #6629625d;
 }
+
+@keyframes nm-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
 .numButBX {
   height: 59px;
   width: 59px;
   margin: 10px 4px;
   font-size: 35px;
-  border-radius: 50%;
-  border: 1px solid white;
+  border-radius: 47% 50% 50% 47% / 86% 13% 81% 5%;
+  border: 1px solid rgb(173, 79, 161);
 }
 .mathButBX {
   height: 59px;
@@ -162,7 +185,7 @@
   margin: 10px 4px;
   font-size: 35px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid rgb(173, 79, 161);
 }
 .equalButBX {
   height: 59px;
@@ -170,8 +193,8 @@
   margin: 10px 4px;
   font-weight: bold;
   font-size: 25px;
-  border-radius: 45%;
-  border: 1px solid white;
+  border-radius: 24% 69% 33% 75% / 75% 14% 64% 6%;
+  border: 1px solid rgb(173, 79, 161);
 }
 .mButBX {
   height: 59px;
@@ -179,7 +202,7 @@
   margin: 10px 4px;
   font-size: 25px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid rgb(173, 79, 161);
 }
 .aButBX {
   height: 59px;
@@ -187,7 +210,7 @@
   margin: 10px 4px;
   font-size: 25px;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 1px solid rgb(173, 79, 161);
 }
 
 .numButBX,
@@ -195,7 +218,7 @@
 .mButBX,
 .equalButBX,
 .mathButBX {
-  color: rgb(255, 255, 255);
+  color: rgb(173, 79, 161);
   text-shadow: none;
 }
 
@@ -205,18 +228,38 @@
 .equalButBX:hover,
 .mathButBX:hover {
   cursor: pointer;
-  color: rgb(253, 253, 253);
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff,
-    0 0 40px rgb(255, 255, 255), 0 0 80px rgb(255, 255, 255),
-    0 0 90px rgb(255, 255, 255), 0 0 100px rgb(255, 255, 255),
-    0 0 150px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px rgb(223, 79, 203), 0 0 10px rgb(223, 79, 203),
+    0 0 20px rgb(223, 79, 203), 0 0 40px rgb(223, 79, 203),
+    0 0 80px rgb(223, 79, 203), 0 0 90px rgb(223, 79, 203),
+    0 0 100px rgb(223, 79, 203), 0 0 150px rgb(223, 79, 203);
+  box-shadow: 0 0 5px rgb(223, 79, 203), 0 0 10px rgb(223, 79, 203),
+    0 0 20px rgb(223, 79, 203), 0 0 40px rgb(223, 79, 203),
+    0 0 80px rgb(223, 79, 203), 0 0 90px rgb(223, 79, 203),
+    0 0 100px rgb(223, 79, 203), 0 0 150px rgb(223, 79, 203);
 }
 
 @media (max-width: 600px) {
   .blck {
-    display: initial;
+    display: flex;
+    flex-wrap: wrap;
+    height: 1500px;
   }
   .blck h3 {
     color: rgb(158, 158, 158);
   }
+}
+
+.leftBtn {
+  border-radius: 47% 50% 50% 47% / 86% 13% 81% 5%;
+}
+
+.midLeftBtn {
+  border-radius: 34% 25% 31% 45% / 78% 23% 23% 8%;
+}
+.midRightBtn {
+  border-radius: 31% 46% 31% 29% / 24% 78% 10% 23%;
+}
+.rightBtn {
+  border-radius: 20% 59% 15% 65% / 21% 82% 7% 65%;
 }

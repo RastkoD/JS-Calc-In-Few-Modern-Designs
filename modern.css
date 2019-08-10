@@ -24,6 +24,7 @@
     #ffa212
   );
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   font-size: 3em;
   font-weight: bold;
@@ -34,6 +35,7 @@
 .firstMX {
   background-image: linear-gradient(to top left, #01bbff 0%, #0ef78e 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
   font-size: 3em;
   font-weight: bold;

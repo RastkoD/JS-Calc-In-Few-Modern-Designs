@@ -159,7 +159,7 @@
   margin-top: 50px;
   margin-bottom: 10px;
   border: 1px solid rgb(240, 155, 228);
-  box-shadow: 6px 6px 5px rgb(202, 10, 177, 0.2);
+  box-shadow: 6px 6px 5px rgba(128, 7, 111, 0.2);
 }
 
 @keyframes nm-animation {

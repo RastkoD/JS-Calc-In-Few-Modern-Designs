@@ -12,4 +12,5 @@
  * [x] To have fun and with gradients and border-radius
  * [x] To add/remove class via jQuery and disable btn (On/Off button)
  * [x] To animate gradient background, text and buttons
+ * [x] Cross-browser compatibility(CSS3)
 

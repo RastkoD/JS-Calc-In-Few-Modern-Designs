@@ -1,8 +1,6 @@
 # JS modern Calculator (a few different designs) 
 #### Futuristic minimalist style calc, modern vibrant gredients...
 
-### :rocket: [DEMO](https://jscalcdesigns.netlify.com/)
-
 # What I learned
 
  * [x] New UI Design Trends
